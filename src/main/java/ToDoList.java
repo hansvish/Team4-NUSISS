@@ -4,6 +4,15 @@ import java.util.Collection;
 
 public class ToDoList {
 
+	Colour[] colours; 
+	colours = new Colour[10];
+	
+	colours[0]= new Colour(Colour.red);
+	colours[1]= new Colour(Colour.blue);	
+	colours[2]= new Colour(Colour.yellow);
+	colours[3]= new Colour(Colour.green);
+	colours[4]= new Colours(Colour.white); 
+	
     private HashMap<String, Task> tasks = new HashMap<String, Task>();
 
     public void addTask (Task task) {
