@@ -1,10 +1,11 @@
 import java.util.HashMap;
+import java.awt.Color;
 import java.util.ArrayList;
 import java.util.Collection;
 
 public class ToDoList {
 
-	Colour[] colours; 
+	Color[] colours;
 	colours = new Colour[10];
 	
 	colours[0]= new Colour(Colour.red);
@@ -15,7 +16,7 @@ public class ToDoList {
 	
     private HashMap<String, Task> tasks = new HashMap<String, Task>();
 
-    public void addTask (Task task) {
+    public void addTask(Task task){
         tasks.put(task.getDescription(), task);
     }
     public void completeTask(String description) {
